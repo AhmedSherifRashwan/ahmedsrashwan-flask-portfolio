@@ -1,0 +1,167 @@
+
+.exo-2-GFont {
+    font-family: "Exo 2", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+#Skillset{
+    background-color: #18293e;
+    color: #ffffff;
+}
+
+#Hero {
+    padding: 10%;
+    color: #D8D8F6;
+}
+#Hero h1{
+    font-size: 64pt;
+}
+#Hero h3{
+    font-size: 30pt;
+}
+.reactive-button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 40px 10px 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .reactive-button:hover {
+    font-weight: 600;
+    border-radius: 10px;
+    font-style: italic;
+ }
+
+
+.Hero {
+    position: relative;
+    overflow: hidden; 
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+}
+
+
+body {
+    margin: 0;
+    background-color: #18293e; 
+}
+
+#pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+#slideContainer {
+    width: 400%; 
+    height: 100%;
+}
+.panel {
+    height: 100%;
+    width: 25%;
+    float: left;
+}
+
+#Conferences{
+    background-color: #18293e; 
+    padding: 5%;
+    color: aliceblue;
+}
+#Conferences h1{
+    font-size: 36pt;
+    text-align: center;
+}
+#BsidesLDN2022,
+#DOcon2022 {
+    padding: 60px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+
+}
+
+#BsidesLDN2022 h6{
+    font-weight: 600;
+    font-size: 24pt;
+}
+#DOcon2022 h6{
+    font-weight: 600;
+    font-size: 24pt;
+}
+.conf-view-btn{
+    background-color: #3a608f; 
+    border: 0;
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    border-radius: 10px;
+}
+.conf-view-btn:hover{
+    background-color: #3d6392; 
+    border: 0;
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#badge-collection{
+    background-color: #18293e;
+    color: #ffffff;
+}
+#typed {
+    display: block;
+    margin-bottom: 1rem;
+  }
+.progress-bar{
+    font-size: 12pt;
+}
+.blog-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+#myBlogs{
+    background-color: #18293e;
+    color: #ffffff;
+}
+#contactMe{
+    background-color: #18293e;
+}
+.badge-medium {
+    background-color: #6f42c1; /* Example purple color */
+    color: #ffffff;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.25rem;
+    display: inline-block; /* Ensures the badge is in-line */
+    font-size: 0.75rem;
+  }
+/* Futuristic blue-style "Read More" button */
+.btn-read-more {
+    background-color: #2979ff; /* Vibrant blue */
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0.3rem; /* Rounded corners */
+  }
+  
+  .btn-read-more:hover {
+    background-color: #1b61d1; /* Darker blue on hover */
+    transform: translateY(-2px);
+    font-style: italic;
+    box-shadow: 0 6px 16px rgba(41, 121, 255, 0.3); /* Soft blue glow */
+  }
+  
+  

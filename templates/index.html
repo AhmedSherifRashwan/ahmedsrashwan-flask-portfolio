@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/184e635a6e.js" crossorigin="anonymous"></script>
+    <title>Ahmed Rashwan</title>
+</head>
+<body>
+    <div class="container-fluid Hero" id="Hero" style="background-image: url(static/images/HeroSection.png); background-repeat: no-repeat; background-size: cover;">
+        <div class="col-sm-8 hero-content">
+            <h1>Hey👋, I'm Ahmed Rashwan</h1>
+            <h3 id="typed"></h3>
+            <button class="reactive-button" href="#Conferences">Learn More  <i class="fa-solid fa-location-arrow"></i></button>
+        </div>
+    </div>
+    <div class="container-fluid p-5" id="Skillset">
+        <h1 class="text-center mb-5">Core Skills</h1>
+        <div class="row gy-4">
+          <!-- Skill Card Example -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                  <!-- ICON: Replace fa-... with any Font Awesome icon -->
+                  <i class="fa-solid fa-code fa-2x me-3 text-success"></i>
+                  <h5 class="mb-0">Java</h5>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar"
+                       style="width: 75%;"
+                       aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Repeat for each skill -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-brands fa-python fa-2x me-3 text-success"></i>
+                  <h5 class="mb-0">Python3</h5>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar"
+                       style="width: 75%;"
+                       aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-code fa-2x me-3 text-success"></i>
+                  <h5 class="mb-0">C/C++</h5>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar"
+                       style="width: 75%;"
+                       aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Assembly Language -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-microchip fa-2x me-3 text-success"></i>
+                  <h5 class="mb-0">Assembly Language</h5>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar"
+                       style="width: 75%;"
+                       aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Reverse Engineering -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-screwdriver-wrench fa-2x me-3 text-success"></i>
+                  <h5 class="mb-0">Reverse Engineering</h5>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar"
+                       style="width: 75%;"
+                       aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Digital Forensics -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-search fa-2x me-3 text-success"></i>
+                  <h5 class="mb-0">Digital Forensics</h5>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar"
+                       style="width: 75%;"
+                       aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Penetration Testing -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-user-secret fa-2x me-3 text-success"></i>
+                  <h5 class="mb-0">Penetration Testing</h5>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar"
+                       style="width: 75%;"
+                       aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Exploit Development -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-bug fa-2x me-3 text-success"></i>
+                  <h5 class="mb-0">Exploit Development</h5>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar"
+                       style="width: 75%;"
+                       aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Web-Application Security -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-globe fa-2x me-3 text-success"></i>
+                  <h5 class="mb-0">Web-Application Security</h5>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar"
+                       style="width: 75%;"
+                       aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Virtualisation -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-cloud fa-2x me-3 text-success"></i>
+                  <h5 class="mb-0">Virtualisation</h5>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar"
+                       style="width: 75%;"
+                       aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Governance, Risk, Compliance -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-shield-halved fa-2x me-3 text-success"></i>
+                  <h5 class="mb-0">Governance, Risk, Compliance</h5>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar"
+                       style="width: 75%;"
+                       aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- OSINT -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-magnifying-glass fa-2x me-3 text-success"></i>
+                  <h5 class="mb-0">OSINT</h5>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar"
+                       style="width: 75%;"
+                       aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    <div class="container-fluid" id="Conferences">
+        <h1>Featured Conferences</h1>
+        <div class="row">
+            <div class="col-sm-6" id="BsidesLDN2022">                    
+            <h6>Using OSINT To Aid In Finding Missing People | Bsides London 2022</h6>
+            <p>A talk on my experience using OSINT to aid in finding missing people and participating in TraceLabs Search Party Both as an OSINTEER and a Judge.</p>
+            <a href="http://google.com"><button class="conf-view-btn">View  <i class="fa-solid fa-location-arrow"></i></button></a>               
+        </div>
+        <div class="col-sm-6" id="BsidesLDN2022">
+            <h6>Offensive Security: Welcome to The Dark Side | Digital Overdose 2022</h6>
+            <p>I talked about the steps in a penetration test, common tools, and then analyzing the business side of offensive security.</p>
+            <a href="https://www.youtube.com/watch?v=cVvf03p60zI&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=6"><button class="conf-view-btn">View  <i class="fa-solid fa-location-arrow"></i></button></a>
+        </div>
+        </div>
+    </div>
+    <div class="container-fluid p-4" id="badge-collection">
+        <h1 class="text-center p-2">Badge Collection</h1>
+        <div class="row text-center">
+            <div class="col-sm-3">
+               <img class="badge-img hidden" src="../static/images/eJPT.png" alt="" srcset="">
+            </div>
+            <div class="col-sm-3">
+                <img class="badge-img hidden" src="../static/images/certified-in-cybersecurity-cc.png" alt="" srcset="">
+            </div>
+            <div class="col-sm-3">
+                <img class="badge-img hidden" src="../static/images/TraceLabsParticipation.png" alt="" srcset="">
+            </div>
+            <div class="col-sm-3">
+                <img class="badge-img hidden" src="../static/images/TraceLabsJudge.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <section id="myBlogs" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">My Blog Articles</h2>
+          <p class="text-center mb-5">
+            Check out my latest posts on <strong>Medium</strong> and <strong>CYBNODE</strong>.
+          </p>
+    
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Card 1: Starbucks Ransomware Attack -->
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="../static/images/Starbucks.png"
+                  class="card-img-top blog-card-img"
+                  alt="Starbucks Ransomware Attack"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Starbucks Affected by Ransomware Attack on Blue Yonder
+                  </h5>
+                  <p class="card-text">
+                    A deep dive into how Starbucks supply chain partner, Blue Yonder, 
+                    was hit by ransomware, and the broader impact on Starbucks’ operations.
+                  </p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <span class="badge badge-medium me-2">Medium</span>
+                  <div class="mt-2">
+                    <a
+                    href="https://medium.com/@rsasec0x01/starbucks-affected-by-ransomware-attack-on-blue-yonder-a3231c60695c"
+                    class="btn btn-read-more"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Read More
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 2: Cracking the Matrix -->
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="../static/images/TRW.jpg"
+                  class="card-img-top blog-card-img"
+                  alt="Cracking the Matrix"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Cracking the Matrix: The Real-World Data Breach Breakdown
+                  </h5>
+                  <p class="card-text">
+                    An in-depth look at a major data breach scenario—how it happened, 
+                    who was impacted, and the crucial lessons learned for cybersecurity professionals.
+                  </p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <span class="badge badge-medium me-2">Medium</span>
+                  <div class="mt-2">
+                    <a
+                    href="https://medium.com/@rsasec0x01/cracking-the-matrix-the-real-world-data-breach-breakdown-222a47d7482a"
+                    class="btn btn-read-more"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Read More
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 3: WordPress in 2025 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="../static/images/wordpress.png"
+                  class="card-img-top blog-card-img"
+                  alt="WordPress in 2025"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Are You Still Using WordPress in 2025? Vulnerabilities & Threats
+                  </h5>
+                  <p class="card-text">
+                    A critical examination of WordPress’ enduring security challenges, 
+                    the latest threats, and best practices to safeguard your site in 2025.
+                  </p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <span class="badge bg-success mb-2 d-inline-block">CYBNODE</span>
+                  <div class="mt-2">
+                    <a
+                    href="https://www.cybnode.com/en_GB/blog/are-you-still-using-wordpress-in-2025-vulnerabilities-threats"
+                    class="btn btn-read-more"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Read More
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+      <footer class="" id="contactMe">
+        <div class="container py-5" style="color: #ffffff;">
+          <div class="row">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <h5>Contact Me</h5>
+              <p class="mb-2">
+                I’m actively seeking new roles and open to relocating for the right opportunity. Whether you need a dedicated cybersecurity specialist or just want to swap stories about the latest exploits, I’d love to connect.
+              </p>
+              <p class="mb-2">
+                As a firm believer in Kaizen a Japanese philosophy of continuous improvement even if its by 1% everyday—I’m always refining my approach and expanding my knowledge. 
+              </p>
+              <p class="mb-2">Drop me a line, and let’s explore how we can collaborate, share knowledge, enjoy a good cup of coffee, and grow our networks.</p>
+            </div>
+            <!-- Social / Quick Links Column -->
+            <div class="col-md-6 text-md-end">
+              <h5>Let’s Connect</h5>
+              <div class="mt-3">
+                <!-- Email -->
+                <a
+                  href="mailto:ahmed.s.rashwan@outlook.com"
+                  class="text-decoration-none text-white me-3"
+                >
+                  <i class="fa-solid fa-envelope fa-lg"></i>
+                </a>
+                <!-- X (Twitter) -->
+                <a
+                  href="https://twitter.com/ahmedrsasec0x01"
+                  class="text-decoration-none text-white me-3"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <!-- If FA doesn't support the X logo, use fa-twitter instead -->
+                  <i class="fa-brands fa-x-twitter fa-lg"></i>
+                </a>
+                <!-- LinkedIn -->
+                <a
+                  href="https://www.linkedin.com/in/rsasec0x01"
+                  class="text-decoration-none text-white me-3"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Note -->
+          <div class="row mt-4" style="color: #ffffff;">
+            <div class="col text-center">
+              <small>
+                &copy; 2025 Ahmed Rashwan. All Rights Reserved.
+              </small>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var typed = new Typed('#typed', {
+        strings: [
+          "Cybersecurity Graduate",
+          "Conference Speaker",
+          "OSINT Enthusiast",
+          "Barista & Coffee Connoseiur",
+          "Certified Junior Penetration Tester",
+          "(ISC)2 Certified in Cybersecurity"
+        ],
+        typeSpeed: 40,
+        backSpeed: 25,
+        backDelay: 2000,
+        loop: true,
+        showCursor: false
+      });
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const images = document.querySelectorAll('.badge-img.hidden');
+
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Get the "index" we assigned to the image
+            const index = entry.target.dataset.index;
+
+            // Remove hidden class
+            entry.target.classList.remove('hidden');
+
+            // Staggered delay: 0.2s * index
+            entry.target.style.animationDelay = `${index * 0.2}s`;
+
+            // Add Animate.css classes
+            entry.target.classList.add('animate__animated', 'animate__fadeInDown');
+
+            // Unobserve so it doesn't re-trigger
+            obs.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // Observe each image and store its index
+      images.forEach((image, i) => {
+        image.dataset.index = i;
+        observer.observe(image);
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>

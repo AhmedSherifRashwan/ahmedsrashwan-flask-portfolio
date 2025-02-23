@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll-Activated Carousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      height: 200vh; /* To enable scrolling on the page */
+    }
+
+    .carousel {
+      width: 100%;
+      height: 60vh;
+      overflow: hidden;
+    }
+
+    .carousel-inner {
+      display: flex;
+    }
+
+    .carousel-item {
+      flex: 0 0 100%;
+      height: 100%;
+    }
+
+    /* Add padding to make the carousel scrollable with mouse wheel or touch */
+    .carousel-inner {
+      scroll-snap-type: x mandatory;
+      overflow-x: scroll;
+    }
+
+    .carousel-item {
+      scroll-snap-align: start;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          hello text 1
+        </div>
+        <div class="carousel-item">
+          hello text 2
+        </div>
+        <div class="carousel-item">
+          hello text 3
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let carousel = document.getElementById('carouselExample');
+    let carouselInner = carousel.querySelector('.carousel-inner');
+    let items = carouselInner.querySelectorAll('.carousel-item');
+    let scrollPosition = 0;
+
+    window.addEventListener('wheel', (event) => {
+      if (event.deltaY > 0) {
+        // Scroll down: move to next item
+        scrollPosition = Math.min(scrollPosition + 1, items.length - 1);
+      } else {
+        // Scroll up: move to previous item
+        scrollPosition = Math.max(scrollPosition - 1, 0);
+      }
+
+      // Move the carousel to the respective item
+      carouselInner.style.transform = `translateX(-${scrollPosition * 100}%)`;
+    });
+
+    window.addEventListener('scroll', () => {
+      // Prevents default scroll behavior while on the carousel
+      if (scrollPosition === items.length - 1) {
+        window.scrollTo(0, document.body.scrollHeight);
+      }
+    });
+  </script>
+</body>
+</html>
